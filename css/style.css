@@ -1,0 +1,73 @@
+body {
+  background-image: linear-gradient(to right, #2e2b4a, #453e79);
+  color: #fff;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+/* Navbar */
+nav ul li {
+  display: inline;
+  list-style: none;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+#hero-sect,
+.home-align {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 50px;
+}
+
+#hero-sect img,
+.home-align img {
+  width: 600px;
+}
+
+/* What Is Section */
+#what-is-1,
+#what-is-3,
+#resources-sect {
+  background-color: #292743;
+}
+
+#what-is h2 {
+  text-align: center;
+}
+
+/* Video Section */
+
+#video-sect {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Subcribe Form */
+
+#subcribe-form {
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+#subcribe-form section {
+  background-color: #292743;
+  width: 80%;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 10px;
+  display: grid;
+  padding: 30px;
+}
