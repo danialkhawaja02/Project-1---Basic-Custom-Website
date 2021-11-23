@@ -2,6 +2,7 @@ body {
   background-image: linear-gradient(to right, #2e2b4a, #453e79);
   color: #fff;
   box-sizing: border-box;
+  font-family: "Andada Pro", serif;
   margin: 0;
   padding: 0;
 }
@@ -10,40 +11,130 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 0 50px;
+  padding: 0 60px;
+}
+
+/* Logo */
+#logo {
+  padding-top: 25px;
+  padding-left: 15px;
 }
 
 /* Navbar */
+nav {
+  padding-top: 20px;
+}
+
 nav ul li {
   display: inline;
   list-style: none;
-  padding: 0 20px;
+  padding: 0 30px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
 }
 
 /* Hero Section */
 #hero-sect,
 .home-align {
-  height: 600px;
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 0 50px;
+  padding: 15px 50px 0 50px;
 }
 
 #hero-sect img,
 .home-align img {
   width: 600px;
+  padding-top: 70px;
+}
+#hero-sect img {
+  -webkit-animation: mover 1.5s infinite alternate;
+  animation: mover 1.5s infinite alternate;
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+#hero-sect section h2 {
+  font-size: 52px;
+  margin: 25px 0;
+}
+
+#hero-sect section p {
+  font-size: 16px;
+  line-height: 1.3em;
+  padding-right: 55px;
 }
 
 /* What Is Section */
+#what-is,
 #what-is-1,
 #what-is-3,
-#resources-sect {
+#benefits,
+footer {
   background-color: #292743;
+}
+
+#what-is-2 {
+  background-image: linear-gradient(to right, #2e2b4a, #453e79);
 }
 
 #what-is h2 {
   text-align: center;
+  padding-top: 50px;
+  font-size: 46px;
+  margin: 25px 0;
+}
+
+.triangle-icon {
+  width: 0px;
+  height: 0px;
+  border-style: inset;
+  border-width: 0 25px 40px 25px;
+  border-color: transparent transparent #1379e7 transparent;
+}
+
+.triangle-icon p {
+  text-align: center;
+  top: 16px;
+  left: -25px;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin: 0px;
+  color: #fff;
+}
+
+#what-is-1 div {
+  display: flex;
+  flex-direction: column;
+}
+
+#what-is-1 div h2,
+#what-is-2 div h2,
+#what-is-3 div h2 {
+  text-align: left;
+  padding-top: 0;
+  margin: 15px 0;
+  font-size: 46px;
+}
+
+#what-is-1 div p,
+#what-is-2 div p,
+#what-is-3 div p {
+  margin-top: 0;
+  font-size: 16px;
+  line-height: 1.3em;
+  padding-right: 55px;
 }
 
 /* Video Section */
@@ -51,23 +142,76 @@ nav ul li {
 #video-sect {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
+  height: 500px;
+}
+
+#video-sect h2 {
+  font-size: 46px;
+  margin-bottom: 0;
+}
+
+#video-sect p {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.3em;
+}
+
+/* Benefits */
+#benefits {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#benefits h2 {
+  font-size: 46px;
+  margin-bottom: 25px;
+}
+
+#card-boxes {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 30px;
+}
+
+.sub-card-box {
+  background-color: #4b4f9c;
+  margin: 0 20px;
+  height: 350px;
+  width: 30%;
+  border-radius: 10px;
+  text-align: center;
 }
 
 /* Subcribe Form */
 
 #subcribe-form {
-  height: 400px;
+  height: 250px;
   display: flex;
   align-items: center;
+  position: relative;
+  top: 120px;
 }
 
 #subcribe-form section {
-  background-color: #292743;
-  width: 80%;
-  height: 200px;
+  background-color: #4b4f9c;
+  width: 75%;
+  height: 150px;
   margin: 0 auto;
-  border-radius: 10px;
+  border-radius: 25px;
   display: grid;
   padding: 30px;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 120px 30px 0 10px;
+  height: 200px;
 }
