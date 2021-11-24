@@ -36,6 +36,11 @@ nav ul li a {
   text-decoration: none;
 }
 
+nav ul li a:hover {
+  border-bottom: 2px solid #fff;
+  color: #eee;
+}
+
 /* Hero Section */
 #hero-sect,
 .home-align {
@@ -198,7 +203,7 @@ footer {
 }
 
 #subcribe-form section {
-  background-color: #4b4f9c;
+  background-color: #434da7;
   width: 75%;
   height: 150px;
   margin: 0 auto;
@@ -214,4 +219,133 @@ footer {
   justify-content: space-around;
   padding: 120px 30px 0 10px;
   height: 200px;
+}
+
+/***
+  FAQ PAGE
+***/
+
+#faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+#faq h2 {
+  margin: 0;
+  font-size: 46px;
+}
+
+#faq-heading {
+  width: 50%;
+  margin-top: 13px;
+  text-align: center;
+  font-size: 16px;
+}
+
+#faq hr {
+  width: 90px;
+  border: 2px solid #434da7;
+}
+
+#accordion {
+  padding-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#accordion-col-one,
+#accordion-col-two {
+  width: 43%;
+}
+
+#accordion details {
+  background: #434da7;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+  padding: 30px 30px 25px 30px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+#accordion details
+{
+    transition: height 0.5s ease;
+    overflow: hidden;
+}
+
+#accordion details p
+{
+    font-size: 15px;
+}
+
+#accordion details:not([open])
+{
+    height: 1.5em;
+}
+
+#accordion details[open]
+{
+    height: 6.80em;
+}
+
+#accordion details[open] summary ~ * {
+  animation: slide-in .5s ease-in-out;
+}
+
+@keyframes slide-in {
+  0%    {opacity: 0; margin-left: -10px}
+  100%  {opacity: 1; margin-left: 0px}
+}
+
+/***
+  RESOURCES PAGE
+***/
+
+#resources {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+#resources h2 {
+  margin: 0;
+  font-size: 46px;
+}
+
+#resources p {
+  width: 50%;
+  margin-top: 7px;
+  text-align: center;
+  font-size: 16px;
+}
+
+#resources hr {
+  width: 193px;
+  border: 2px solid #1379e7;
+}
+
+.courses {
+  display: grid;
+  grid-template-areas: 
+  grid-gap: 1.2rem;
+}
+
+.courses div img {
+  width: 270px;
+}
+
+.bg-color{
+  background: #1379e7;
+  border-left: 3px solid #ffbc00;
 }
