@@ -276,34 +276,36 @@ footer {
   box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
 }
 
-#accordion details
-{
-    transition: height 0.5s ease;
-    overflow: hidden;
+#accordion details {
+  transition: height 0.5s ease;
+  overflow: hidden;
 }
 
-#accordion details p
-{
-    font-size: 15px;
+#accordion details p {
+  font-size: 15px;
 }
 
-#accordion details:not([open])
-{
-    height: 1.5em;
+#accordion details:not([open]) {
+  height: 1.5em;
 }
 
-#accordion details[open]
-{
-    height: 6.80em;
+#accordion details[open] {
+  height: 6.8em;
 }
 
 #accordion details[open] summary ~ * {
-  animation: slide-in .5s ease-in-out;
+  animation: slide-in 0.5s ease-in-out;
 }
 
 @keyframes slide-in {
-  0%    {opacity: 0; margin-left: -10px}
-  100%  {opacity: 1; margin-left: 0px}
+  0% {
+    opacity: 0;
+    margin-left: -10px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0px;
+  }
 }
 
 /***
@@ -337,7 +339,7 @@ footer {
 
 .courses {
   display: grid;
-  grid-template-areas: 
+  /*grid-template-areas: ;*/
   grid-gap: 1.2rem;
 }
 
@@ -345,7 +347,7 @@ footer {
   width: 270px;
 }
 
-.bg-color{
+.bg-color {
   background: #1379e7;
   border-left: 3px solid #ffbc00;
 }
