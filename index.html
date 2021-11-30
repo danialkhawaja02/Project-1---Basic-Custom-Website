@@ -11,8 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
+    <link href="css/all.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -21,14 +20,13 @@
       </div>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Resources</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="resources.html">Resources</a></li>
         </ul>
       </nav>
     </header>
-    <section id="hero-sect" class="home-align">
+    <section id="hero-sect" class="flex-align">
       <section>
         <h2>Welcome in Blockchain World</h2>
         <p>
@@ -38,11 +36,11 @@
           Blockchain and cryptocurrency.
         </p>
       </section>
-      <img src="images/hero-pic1.png" />
+      <img src="images/hero-pic.png" />
     </section>
-    <section id="what-is">
+    <section id="what-is-sect">
       <h2>What is Blockchain? Glad you asked!</h2>
-      <section id="what-is-1" class="home-align">
+      <section id="what-is-one" class="flex-align">
         <div>
           <div class="triangle-icon">
             <p>1</p>
@@ -55,10 +53,10 @@
             dolore dignissimos hic culpa.
           </p>
         </div>
-        <img src="images/hero-pic1.png" />
+        <img src="images/step-one.png" />
       </section>
-      <section id="what-is-2" class="home-align">
-        <img src="images/hero-pic1.png" />
+      <section id="what-is-two" class="flex-align">
+        <img src="images/step-two.png" />
         <div>
           <div class="triangle-icon">
             <p>2</p>
@@ -71,7 +69,7 @@
             dolore dignissimos hic culpa.
           </p>
       </section>
-      <section id="what-is-3" class="home-align">
+      <section id="what-is-three" class="flex-align">
         <div>
           <div class="triangle-icon">
             <p>3</p>
@@ -84,7 +82,7 @@
             dolore dignissimos hic culpa.
           </p>
           </div>
-        <img src="images/hero-pic1.png" />
+        <img src="images/step-three.png" />
       </section>
     </section>
     <section id="video-sect">
@@ -93,83 +91,77 @@
         Don't worry. Watch this entire video to understand the dynamic of
         blockchain in less than 5 mintues.
       </p>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/6WG7D47tGb0"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+      <a href="#"><i class="fas fa-play-circle"></i></a>
     </section>
-    <section id="benefits">
+    </div>
+    <section id="benefits-sect" class="flex-align">
       <h2>What are the benefits of blockchain?</h2>
       <div id="card-boxes">
         <div class="sub-card-box">
-          <i></i>
+          <i class="fa-brands fa-sketch"></i>
           <h3>Benefit</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
           accusantium odio veniam nam optio?</p>
+          <a href="#">Learn More</a>
         </div>
         <div class="sub-card-box">
-          <i></i>
+          <i class="fa-solid fa-microchip"></i>
           <h3>Benefit</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
           accusantium odio veniam nam optio?</p>
+          <a href="#">Learn More</a>
         </div>
         <div class="sub-card-box">
-          <i></i>
+          <i class="fas fa-chart-line"></i>
           <h3>Benefit</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
           accusantium odio veniam nam optio?</p>
+          <a href="#">Learn More</a>
         </div>
       </div>
     </section>
-    <section id="resources-sect" class="home-align">
-      <img src="images/hero-pic1.png" />
-      <section>
+    <section id="resources-sect" class="flex-align">
+      <img src="images/resources.png" />
+      <section id="resources-txt">
+        <h2>Checkout Resources Of Blockchain</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
           accusantium odio veniam nam optio? Amet minima unde rerum ducimus? Ex
           consequatur pariatur blanditiis voluptas a quia mollitia voluptates
           recusandae ullam?
         </p>
+        <button><a href="#">Submit</a></button>
       </section>
     </section>
     <section id="subcribe-form">
-      <section>
+      <section id="item-1">
         <h2>Join Our Newsletter</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis
           iusto voluptatibus sequi molestias.
         </p>
-        <input type="email" />
-        <input type="submit" />
+      </section>
+      <section id="item-2">
+        <input type="email" placeholder="Enter your email address" />
+        <button><a href="#">Submit</a></button>
       </section>
     </section>
     <footer>
-      <section id="footer-one">
-        <img src="images/logo.png" />
-        <p>Get Social</p>
-        <div>
-          <i></i>
-          <i></i>
-          <i></i>
-        </div>
-      </section>
-      <section id="footer-two">
-        <h4>Page</h4>
-        <p>Home</p>
-      </section>
-      <section id="footer-three">
-        <h4>Page</h4>
-        <p>Home</p>
-      </section>
-      <section id="footer-four">
-        <h4>Page</h4>
-        <p>Home</p>
-      </section>
+      <div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </div>
+      <div>
+      <img src="images/logo.png" />
+      </div>
+      <div>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-linkedin-in"></i>
+      </div>
     </footer>
   </body>
 </html>
