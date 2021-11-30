@@ -173,7 +173,7 @@ nav ul li a:hover {
   font-size: 56px;
 }
 
-/* Benefits */
+/* Benefits Section */
 #benefits-sect {
   flex-direction: column;
   padding-bottom: 50px;
@@ -250,9 +250,9 @@ nav ul li a:hover {
   background: #0051a8;
 }
 
-/* Subcribe Form */
+/* Subscribe Form */
 
-#subcribe-form {
+#subscribe-form {
   height: 130px;
   display: flex;
   align-items: center;
@@ -265,7 +265,7 @@ nav ul li a:hover {
   padding: 30px 0;
 }
 
-#subcribe-form section {
+#subscribe-form section {
   display: grid;
   margin: 0 auto;
 }
@@ -331,7 +331,6 @@ input {
 
 footer {
   display: flex;
-  justify-content: center;
   height: 140px;
   display: flex;
   justify-content: space-around;
@@ -510,4 +509,170 @@ footer i {
   flex-direction: column;
   align-content: center;
   justify-content: center;
+}
+
+/**
+  MEDIA QUERIES
+**/
+
+@media all and (min-width: 320px) and (max-width: 899px) {
+  /* Utilities */
+  .flex-align {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 7px 25px 0 25px;
+  }
+  img {
+    width: 300px;
+  }
+  h2 {
+    font-size: 36px;
+    margin: 15px 0;
+    text-align: center;
+  }
+  p {
+    font-size: 12px;
+    line-height: 1.3em;
+    text-align: center;
+  }
+
+  /* Header */
+  header {
+    padding: unset;
+  }
+  nav {
+    display: none;
+  }
+
+  /* Hero Section */
+  #hero-sect img {
+    padding-top: 20px;
+  }
+  #hero-sect section p {
+    padding-right: unset;
+  }
+
+  /* What Is Section */
+  #what-is-sect h2 {
+    font-size: 36px;
+  }
+  .triangle-icon {
+    margin: 0 auto;
+  }
+  #what-is-one div h2,
+  #what-is-two div h2,
+  #what-is-three div h2 {
+    padding-top: 0;
+    font-size: 36px;
+    text-align: center;
+  }
+  #what-is-one div p,
+  #what-is-three div p {
+    padding-right: unset;
+  }
+  #what-is-two img {
+    margin-right: unset;
+    order: 2;
+  }
+
+  /* Video Section */
+  #video-sect h2 {
+    font-size: 36px;
+  }
+  #video-sect p {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  /* Benefits Section */
+  #benefits-sect {
+    height: 100%;
+  }
+  #benefits-sect h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+  }
+  #card-boxes {
+    flex-direction: column;
+    padding: unset;
+  }
+  .sub-card-box {
+    margin: 0 auto;
+    width: 85%;
+  }
+
+  /* Resources Section */
+  section#resources-sect {
+    height: 100%;
+  }
+  #resources-txt {
+    padding: unset;
+  }
+
+  /* Subscribe Form */
+  #subscribe-form {
+    height: 250px;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+  }
+  #subscribe-form section {
+    margin: 10px auto;
+  }
+  #item-1 h2 {
+    font-size: 22px;
+  }
+  #item-1 {
+    grid-template-columns: 250px;
+  }
+  #item-2 {
+    grid-template-columns: 250px;
+  }
+  button {
+    padding: 18px 50px;
+  }
+
+  /*Footer Section*/
+  footer {
+    flex-direction: column;
+  }
+  footer div img {
+    padding-right: unset;
+  }
+  footer ul li {
+    padding: 0 5px;
+  }
+  footer i {
+    padding: 20px;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 899px) {
+  /*Utilities*/
+  img {
+    width: 400px;
+  }
+
+  /* Benefits Section */
+  .sub-card-box {
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  /* subscribe Form */
+  #subscribe-form {
+    height: 250px;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+  }
+  #item-1 {
+    grid-template-columns: 350px;
+  }
+  #item-2 {
+    grid-template-columns: 350px;
+  }
 }
