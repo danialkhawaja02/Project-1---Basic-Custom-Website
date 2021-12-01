@@ -483,14 +483,15 @@ footer i {
 
 .courses {
   display: grid;
-  grid-template-columns: 350px 700px;
+  grid-template-columns: 25% 55%;
   grid-gap: 1rem;
   justify-content: center;
   padding-bottom: 20px;
+  height: 200px;
 }
 
 .courses div img {
-  width: 350px;
+  width: 250px;
 }
 
 .courses h2 {
@@ -505,7 +506,7 @@ footer i {
 
 .bg-color {
   background: #434da7;
-  border-left: 3px solid #ffbc00;
+  border-left: 3px solid #00aeff;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -837,5 +838,21 @@ footer i {
   #accordion-col-one,
   #accordion-col-two {
     width: unset;
+  }
+}
+
+/**
+  RESOURCES MEDIA QUERIES
+**/
+@media all and (min-width: 320px) and (max-width: 767px) {
+  #resources-heading {
+    width: 90%;
+  }
+  .courses {
+    grid-template-columns: 85%;
+    height: unset;
+  }
+  .courses p {
+    padding: 0 20px;
   }
 }
