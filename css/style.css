@@ -651,7 +651,7 @@ footer i {
 }
 
 @media all and (min-width: 500px) and (max-width: 899px) {
-  /*Utilities*/
+  /* Utilities */
   img {
     width: 400px;
   }
@@ -662,7 +662,7 @@ footer i {
     width: 70%;
   }
 
-  /* subscribe Form */
+  /* Subscribe Form */
   #subscribe-form {
     height: 250px;
     flex-direction: column;
@@ -674,5 +674,149 @@ footer i {
   }
   #item-2 {
     grid-template-columns: 350px;
+  }
+}
+
+@media all and (min-width: 600px) and (max-width: 899px) {
+  /* Utilities */
+  img {
+    width: 430px;
+  }
+
+  .flex-align {
+    padding: 15px 50px 0 50px;
+  }
+
+  /* What Is Section */
+  #what-is-one,
+  #what-is-two,
+  #what-is-three {
+    padding: 20px 50px;
+  }
+  .sub-card-box {
+    margin: 0 auto;
+    width: 60%;
+  }
+
+  /* Subscribe Form */
+  #item-1 {
+    grid-template-columns: 450px;
+  }
+  #item-2 {
+    grid-template-columns: 450px;
+  }
+}
+
+@media all and (min-width: 900px) and (max-width: 1024px) {
+  /* Utilities */
+  img {
+    width: 450px;
+  }
+
+  /* Benefits Section */
+  #benefits-sect {
+    padding: 15px 0;
+  }
+  .sub-card-box {
+    margin: 0 5px;
+    width: 33%;
+  }
+
+  /* Resources Section */
+  #resources-sect {
+    padding: unset;
+  }
+  #resources-txt {
+    padding: 0px 20px;
+  }
+
+  /* Subscribe Form */
+  #item-1 {
+    grid-template-columns: 300px;
+  }
+
+  #item-1 h2 {
+    font-size: 28px;
+  }
+
+  #item-1 p {
+    font-size: 14px;
+  }
+
+  #item-2 {
+    grid-template-columns: 270px 132px;
+  }
+}
+
+@media all and (min-width: 600px) and (max-width: 899px) {
+  /* Utilities */
+  img {
+    width: 430px;
+  }
+
+  .flex-align {
+    padding: 15px 50px 0 50px;
+  }
+
+  /* What Is Section */
+  #what-is-one,
+  #what-is-two,
+  #what-is-three {
+    padding: 20px 50px;
+  }
+
+  /* Benefits Section */
+  .sub-card-box {
+    margin: 0 auto;
+    width: 60%;
+  }
+
+  /* Subscribe Form */
+  #item-1 {
+    grid-template-columns: 450px;
+  }
+  #item-2 {
+    grid-template-columns: 450px;
+  }
+}
+
+@media all and (min-width: 900px) and (max-width: 1024px) {
+  /* Utilities */
+  img {
+    width: 450px;
+  }
+
+  /* Benefits Section */
+  #benefits-sect {
+    padding: 15px 0;
+  }
+  .sub-card-box {
+    margin: 0 5px;
+    width: 33%;
+  }
+
+  /* Resources Section */
+  #resources-sect {
+    padding: unset;
+  }
+  #resources-txt {
+    padding: 0px 20px;
+  }
+
+  /* Subscribe Form */
+  #item-1 {
+    grid-template-columns: 300px;
+  }
+
+  #item-1 h2 {
+    font-size: 28px;
+  }
+
+  #item-1 p {
+    font-size: 14px;
+  }
+
+  #item-2 {
+    grid-template-columns: 270px 132px;
   }
 }
