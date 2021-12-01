@@ -425,14 +425,15 @@ footer i {
 
 #accordion details p {
   font-size: 15px;
+  text-align: left;
 }
 
 #accordion details:not([open]) {
   height: 1.5em;
 }
 
-#accordion details[open] {
-  height: 6.8em;
+#accordion details[open] ~ p {
+  height: 11em;
 }
 
 #accordion details[open] summary ~ * {
@@ -512,7 +513,7 @@ footer i {
 }
 
 /**
-  MEDIA QUERIES
+  HOME MEDIA QUERIES
 **/
 
 @media all and (min-width: 320px) and (max-width: 899px) {
@@ -818,5 +819,23 @@ footer i {
 
   #item-2 {
     grid-template-columns: 270px 132px;
+  }
+}
+
+/**
+  FAQ MEDIA QUERIES
+**/
+@media all and (min-width: 320px) and (max-width: 899px) {
+  #faq-heading {
+    width: 90%;
+  }
+  #accordion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #accordion-col-one,
+  #accordion-col-two {
+    width: unset;
   }
 }
