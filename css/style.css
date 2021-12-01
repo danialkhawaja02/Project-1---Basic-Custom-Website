@@ -193,11 +193,12 @@ nav ul li a:hover {
 .sub-card-box {
   margin: 0 20px;
   padding-top: 30px;
-  height: 300px;
+  height: 350px;
   width: 28%;
   border-radius: 10px;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  font-size: 14px;
 }
 
 .sub-card-box:hover {
@@ -561,6 +562,14 @@ footer i {
   #what-is-sect h2 {
     font-size: 36px;
   }
+
+  #what-is-one,
+  #what-is-two,
+  #what-is-three {
+    height: 100%;
+    padding: 20px 25px;
+  }
+
   .triangle-icon {
     margin: 0 auto;
   }
@@ -602,8 +611,8 @@ footer i {
     padding: unset;
   }
   .sub-card-box {
-    margin: 0 auto;
-    width: 85%;
+    margin: 10px auto;
+    width: 95%;
   }
 
   /* Resources Section */
@@ -660,7 +669,7 @@ footer i {
 
   /* Benefits Section */
   .sub-card-box {
-    margin: 0 auto;
+    margin: 10px auto;
     width: 70%;
   }
 
@@ -696,8 +705,8 @@ footer i {
     padding: 20px 50px;
   }
   .sub-card-box {
-    margin: 0 auto;
-    width: 60%;
+    margin: 10px auto;
+    width: 50%;
   }
 
   /* Subscribe Form */
@@ -715,13 +724,18 @@ footer i {
     width: 450px;
   }
 
+  /* What Is Section */
+  #what-is-three {
+    padding: 30px 50px;
+  }
+
   /* Benefits Section */
   #benefits-sect {
     padding: 15px 0;
   }
   .sub-card-box {
     margin: 0 5px;
-    width: 33%;
+    width: 32%;
   }
 
   /* Resources Section */
