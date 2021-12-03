@@ -161,7 +161,7 @@ nav ul li a:hover {
   justify-content: center;
   flex-direction: column;
   height: 500px;
-  background: url(images/vid-sect.png) no-repeat center center
+  background: url(../images/vid-sect.png) no-repeat center center
     rgb(25 29 98 / 90%);
   background-size: cover;
   background-blend-mode: multiply;
