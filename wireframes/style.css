@@ -1,0 +1,367 @@
+body {
+  background-color: #a3a3a3;
+  color: #000;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 46px;
+  margin: 25px 0;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.3em;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+button {
+  background: #555555;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 18px 50px;
+}
+
+#step-section,
+#one,
+#three,
+#benefits-section,
+footer {
+  background-color: #b1b1b1;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+
+/* Navbar */
+#logo,
+nav {
+  padding-top: 20px;
+}
+
+nav ul li {
+  display: inline;
+  list-style: none;
+  padding: 0 30px;
+}
+
+nav ul li a:hover {
+  border-bottom: 1px solid #fff;
+  color: #eee;
+}
+
+/* Hero Section */
+#hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 50px;
+  margin-top: 100px;
+}
+
+/* Step Section */
+
+#step-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+}
+
+#one,
+#two,
+#three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+#one div,
+#two div,
+#three div {
+  padding: 0 50px;
+}
+
+#two {
+  background-color: #a3a3a3;
+}
+
+/* Video Section */
+
+#video-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#video-section h2,
+#video-section p {
+  text-align: center;
+}
+
+#video-section p {
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+/* Benefits Section */
+
+#benefits-section h2 {
+  font-size: 46px;
+  text-align: center;
+  padding: 25px 0;
+}
+
+#card-boxes {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 30px;
+}
+
+.sub-card-box h3 {
+  padding-top: 20px;
+}
+
+.sub-card-box {
+  padding-top: 50px;
+  height: 300px;
+  width: 30%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.sub-card-box:hover {
+  background-color: #757575;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+
+.sub-card-box i {
+  font-size: 16px;
+  border: 1px solid #fff;
+  padding: 25px;
+  border-radius: 50%;
+}
+
+.sub-card-box p {
+  padding: 0 20px;
+}
+
+/* Resources Section */
+#resources-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 50px;
+}
+
+#resources-section div {
+  padding-left: 50px;
+}
+
+/* Subscribe Form */
+
+#subscribe-form {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 90px;
+  background-color: #757575;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 50px;
+  padding: 20px 0;
+}
+
+#subscribe-form section {
+  display: grid;
+  margin: 0 auto;
+}
+
+#item-1 {
+  grid-template-columns: 400px;
+}
+
+#item-1 h2,
+#item-1 p {
+  margin: 0;
+}
+
+#item-2 {
+  grid-template-columns: 290px 130px;
+  grid-gap: 10px;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 100px 0 0 0;
+}
+
+#footer-one {
+  padding-top: 45px;
+}
+
+/***
+  FAQ PAGE
+***/
+
+#faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+#faq h2 {
+  margin: 0;
+}
+
+#faq-heading {
+  width: 50%;
+  margin-top: 13px;
+  text-align: center;
+  font-size: 16px;
+}
+
+#faq hr {
+  width: 270px;
+  border: 2px solid #757575;
+}
+
+#accordion {
+  padding-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#accordion-one,
+#accordion-two {
+  width: 45%;
+}
+
+#accordion details {
+  background: #757575;
+  color: #000;
+  cursor: pointer;
+  margin: 10px;
+  padding: 30px 30px 25px 30px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+#accordion details {
+  transition: height 0.5s ease;
+  overflow: hidden;
+}
+
+#accordion details p {
+  font-size: 15px;
+  text-align: left;
+}
+
+#accordion details:not([open]) {
+  height: 1.5em;
+}
+
+#accordion details[open] {
+  height: 6em;
+}
+
+#accordion details[open] summary ~ * {
+  animation: slide-in 0.5s ease-in-out;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    margin-left: -10px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0px;
+  }
+}
+
+/***
+  RESOURCES PAGE
+***/
+
+#resources {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+#resources h2 {
+  margin: 0;
+}
+
+#resources hr {
+  width: 270px;
+  border: 2px solid #757575;
+}
+
+#resources-heading {
+  width: 50%;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.courses {
+  display: grid;
+  grid-template-columns: 350px 650px;
+  grid-gap: 1rem;
+  justify-content: center;
+  padding-bottom: 20px;
+  height: 200px;
+}
+
+.courses div img {
+  width: 250px;
+}
+
+.courses h2 {
+  text-align: center;
+  font-size: 46px;
+}
+
+.courses p {
+  text-align: center;
+  font-size: 16px;
+}
+
+.bg-color {
+  background: #757575;
+  border-left: 3px solid #fff;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
