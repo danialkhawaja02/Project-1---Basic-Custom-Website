@@ -11,12 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-    />
+    <link href="css/all.css" rel="stylesheet">
+    <script src="js/main.js" async></script>
   </head>
   <body>
     <header>
@@ -24,51 +20,72 @@
         <img src="images/logo.png" />
       </div>
       <nav>
-        <ul>
+        <ul class="nav">
           <li><a href="index.html">Home</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="resources.html">Resources</a></li>
         </ul>
       </nav>
+      <div class="hamburger-menu">
+        <i class="fas fa-bars"></i>
+      </div>
     </header>
       <section id="resources">
         <h2>RESOURCES</h2>
         <hr></hr>
-        <p id="resources-heading">Here are the list of one of the best blockchain development courses and useful resources that will help you attain expertise in this field.</p>
+        <p id="resources-heading">Here is the list of one of the best blockchain development courses and useful resources that will help you attain expertise in this field.</p>
         <section class="courses">
           <div>
-            <img src="images/c.gif">
+            <a href="https://blockchaindemo.io/" target="_blank"><img src="images/resources-one.jpg"></a>
           </div>
           <div class="bg-color">
-            <h2>Course Name</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident recusandae dicta quos, rerum ipsa, beatae obcaecati voluptas, cum commodi totam vero perferendis nemo aspernatur aliquam qui reiciendis nisi minima consectetur.</p>
+            <h2>Blockchain Demo</h2>
+            <p>A visual demo of blockchain technology</p>
           </div>
         </section>
         <section class="courses">
           <div>
-            <img src="images/c.gif">
+            <a href="https://www.udemy.com/course/understanding-blockchain-technology/" target="_blank"><img src="images/resources-two.jpg"></a>
           </div>
           <div class="bg-color">
-            <h2>Course Name</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident recusandae dicta quos, rerum ipsa, beatae obcaecati voluptas, cum commodi totam vero perferendis nemo aspernatur aliquam qui reiciendis nisi minima consectetur.</p>
+            <h2>Understanding Blockchain Technology</h2>
+            <p>A Beginner's Guide to Authentic Knowledge on Blockchain Technology and its Applications.</p>
           </div>
         </section>
         <section class="courses">
           <div>
-            <img src="images/c.gif">
+            <a href="https://www.youtube.com/watch?v=QCvL-DWcojc" target="_blank"><img src="images/resources-three.jpg"></a>
           </div>
           <div class="bg-color">
-            <h2>Course Name</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident recusandae dicta quos, rerum ipsa, beatae obcaecati voluptas, cum commodi totam vero perferendis nemo aspernatur aliquam qui reiciendis nisi minima consectetur.</p>
+            <h2>Blockchain Full Course</h2>
+            <p>This Edureka Blockchain Full Course Tutorial video will give you a complete understanding on Blockchain Technology and Ethereum.</p>
           </div>
         </section>
         <section class="courses">
           <div>
-            <img src="images/c.gif">
+            <a href="https://www.youtube.com/playlist?list=PLS5SEs8ZftgUNcUVXtn2KXiE1Ui9B5UrY" target="_blank"><img src="images/resources-four.jpg"></a>
           </div>
           <div class="bg-color">
-            <h2>Course Name</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident recusandae dicta quos, rerum ipsa, beatae obcaecati voluptas, cum commodi totam vero perferendis nemo aspernatur aliquam qui reiciendis nisi minima consectetur.</p>
+            <h2>Blockchain Technology Explained</h2>
+            <p>This playlist on Blockchain covers all the important concepts from basics to advanced</p>
+          </div>
+        </section>
+        <section class="courses">
+          <div>
+            <a href="https://www.udemy.com/course/blockchain-and-bitcoin-fundamentals/" target="_blank"><img src="images/resources-five.jpg"></a>
+          </div>
+          <div class="bg-color">
+            <h2>Blockchain and Bitcoin Fundamentals</h2>
+            <p>Learn the key elements of blockchain and Bitcoin in this bestselling video course and accompanying PDF glossary.</p>
+          </div>
+        </section>
+        <section class="courses">
+          <div>
+            <a href="https://www.coursera.org/specializations/blockchain" target="_blank"><img src="images/resources-six.jpg"></a>
+          </div>
+          <div class="bg-color">
+            <h2>Blockchain Specialization</h2>
+            <p>Innovate with the Next Frontier in Technology. Learn how the blockchain is leading to a paradigm shift in decentralized application programming.</p>
           </div>
         </section>
       </section>
@@ -76,8 +93,7 @@
         <section id="item-1">
           <h2>Join Our Newsletter</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis
-            iusto voluptatibus sequi molestias.
+            Subscribe our newsletter for free and be the first to get notified on new updates.
           </p>
         </section>
         <section id="item-2">
